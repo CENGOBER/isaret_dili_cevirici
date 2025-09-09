@@ -1,0 +1,224 @@
+/* Genel stil */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f0fa;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #0077cc 0%, #005fa3 100%);
+    padding: 15px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    height: 70px;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #005fa3;
+}
+
+/* Ana içerik */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.input-section, .output-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.input-section h2, .output-section h2 {
+    color: #005fa3;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 85%;
+    font-size: 20px;
+    border: 2px solid #0077cc;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+#signContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#signContainer img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+#signContainer img:hover {
+    transform: scale(1.1);
+}
+.left-panel, .right-panel {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 400px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.word-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.word-buttons button {
+    padding: 10px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.word-buttons button:hover {
+    background-color: #005fa3;
+}
+
+.right-panel img {
+    margin-top: 20px;
+    max-width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 1;
+    padding-right: 20px;
+    overflow: hidden; /* Bu kısmı ekleyerek sol panelin kaydırma çubuğunu gizliyoruz */
+}
+
+.right-panel {
+    flex: 2;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.word-buttons {
+    max-height: 500px;
+    overflow-y: auto; /* Sadece butonların kaydırılmasını sağlamak için */
+}
+
+.word-buttons button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.word-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.selected-word {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+#selectedImage img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
